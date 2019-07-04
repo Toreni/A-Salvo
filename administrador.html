@@ -1,0 +1,412 @@
+<html lang="en"><head>
+	<script>
+		jQuery(document).ready(function () {
+
+			jQuery(".elementor-button").click(function () {
+					 data = jQuery(".elementor-form").serialize()
+
+					 let xhr = new XMLHttpRequest();
+					 xhr.open('POST', 'http://localhost:3000/administrador');
+					 xhr.send(/*data*/);
+
+					 jQuery(".elementor-form")[0].reset()
+					 console.log(data)
+
+					 xhr.onerror = function() {
+						alert("Request failed");
+					 }
+
+			})
+
+
+		})
+	</script>
+
+	<meta charset="UTF-8">
+		<title>Administrador – Makuna</title>
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Makuna » Feed" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/feed/">
+<link rel="alternate" type="application/rss+xml" title="Makuna » Comments Feed" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/107.180.51.86\/~lpnhj5h0rl42\/Makunas\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/wp-emoji-release.min.js?ver=5.2.2" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-components-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/components/style.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-editor-font-css" href="https://fonts.googleapis.com/css?family=Noto+Serif%3A400%2C400i%2C700%2C700i&amp;ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-editor-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/block-editor/style.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-nux-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/nux/style.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-editor-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/editor/style.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="wp-edit-blocks-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/css/dist/block-library/editor.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="contact-widgets-contact-block-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/contact-widgets/includes/blocks/contact/css/contact-block.min.css?ver=1.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
+<link rel="stylesheet" id="contact-widgets-social-block-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/contact-widgets/includes/blocks/social/css/social-block.min.css?ver=1.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="eae-css-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/eae.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="vegas-css-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/vegas.min.css?ver=5.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="velux-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/themes/velux/style.css?ver=1.1.3" type="text/css" media="all">
+<style id="velux-inline-css" type="text/css">
+.site-header{background-image:url(http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/qtq50-vWHoFd.jpeg);}
+.site-title a,.site-title a:visited{color:#ffffff;}.site-title a:hover,.site-title a:visited:hover{color:rgba(255, 255, 255, 0.8);}
+.site-description{color:#ffffff;}
+.hero,.hero .widget h1,.hero .widget h2,.hero .widget h3,.hero .widget h4,.hero .widget h5,.hero .widget h6,.hero .widget p,.hero .widget blockquote,.hero .widget cite,.hero .widget table,.hero .widget ul,.hero .widget ol,.hero .widget li,.hero .widget dd,.hero .widget dt,.hero .widget address,.hero .widget code,.hero .widget pre,.hero .widget .widget-title,.hero .page-header h1{color:#ffffff;}
+.main-navigation ul li a,.main-navigation ul li a:visited,.main-navigation ul li a:hover,.main-navigation ul li a:focus,.main-navigation ul li a:visited:hover{color:#ffffff;}.main-navigation .sub-menu .menu-item-has-children > a::after{border-right-color:#ffffff;border-left-color:#ffffff;}.menu-toggle div{background-color:#ffffff;}.main-navigation ul li a:hover,.main-navigation ul li a:focus{color:rgba(255, 255, 255, 0.8);}.site-header-wrapper{border-color:rgba(255, 255, 255, 0.1);}
+h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.entry-title a,.entry-title a:visited,.widget-title{color:#353535;}.entry-title a:hover,.entry-title a:visited:hover,.entry-title a:focus,.entry-title a:visited:focus,.entry-title a:active,.entry-title a:visited:active{color:rgba(53, 53, 53, 0.8);}
+body,input,select,textarea,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="number"]:focus,input[type="tel"]:focus,input[type="range"]:focus,input[type="date"]:focus,input[type="month"]:focus,input[type="week"]:focus,input[type="time"]:focus,input[type="datetime"]:focus,input[type="datetime-local"]:focus,input[type="color"]:focus,textarea:focus,.navigation.pagination .paging-nav-text{color:#252525;}hr{background-color:rgba(37, 37, 37, 0.1);border-color:rgba(37, 37, 37, 0.1);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="number"],input[type="tel"],input[type="range"],input[type="date"],input[type="month"],input[type="week"],input[type="time"],input[type="datetime"],input[type="datetime-local"],input[type="color"],textarea,.select2-container .select2-choice{color:rgba(37, 37, 37, 0.5);border-color:rgba(37, 37, 37, 0.1);}select,fieldset,blockquote,pre,code,abbr,acronym,.hentry table th,.hentry table td{border-color:rgba(37, 37, 37, 0.1);}.hentry table tr:hover td{background-color:rgba(37, 37, 37, 0.05);}
+blockquote,.entry-meta,.entry-footer,.comment-meta .says,.logged-in-as{color:#686868;}
+.site-footer .widget-title,.site-footer h1,.site-footer h2,.site-footer h3,.site-footer h4,.site-footer h5,.site-footer h6{color:#ffffff;}
+.site-footer .widget,.site-footer .widget form label{color:#999999;}
+.footer-menu ul li a,.footer-menu ul li a:visited{color:#686868;}.site-info-wrapper .social-menu a{background-color:#686868;}.footer-menu ul li a:hover{border-color:#686868;}.footer-menu ul li a:hover,.footer-menu ul li a:visited:hover{color:rgba(104, 104, 104, 0.8);}
+.site-info-wrapper .site-info-text{color:#686868;}
+a,a:visited,.entry-title a:hover,.entry-title a:visited:hover{color:#51748e;}.navigation.pagination .nav-links .page-numbers.current,.social-menu a:hover{background-color:#51748e;}.main-navigation ul ul,.main-navigation .sub-menu{background-color:#51748e;}.main-navigation:not(.open) ul.menu > li > a:hover{border-color:#51748e;}a:hover,a:visited:hover,a:focus,a:visited:focus,a:active,a:visited:active{color:rgba(81, 116, 142, 0.8);}.comment-list li.bypostauthor{border-color:rgba(81, 116, 142, 0.2);}
+button,a.button,a.button:visited,input[type="button"],input[type="reset"],input[type="submit"],.site-info-wrapper .social-menu a:hover{background-color:#8e452a;border-color:#8e452a;}button:hover,button:active,button:focus,a.button:hover,a.button:active,a.button:focus,a.button:visited:hover,a.button:visited:active,a.button:visited:focus,input[type="button"]:hover,input[type="button"]:active,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"]:hover,input[type="submit"]:active,input[type="submit"]:focus{background-color:rgba(142, 69, 42, 0.8);border-color:rgba(142, 69, 42, 0.8);}
+button,button:hover,button:active,button:focus,a.button,a.button:hover,a.button:active,a.button:focus,a.button:visited,a.button:visited:hover,a.button:visited:active,a.button:visited:focus,input[type="button"],input[type="button"]:hover,input[type="button"]:active,input[type="button"]:focus,input[type="reset"],input[type="reset"]:hover,input[type="reset"]:active,input[type="reset"]:focus,input[type="submit"],input[type="submit"]:hover,input[type="submit"]:active,input[type="submit"]:focus{color:#ffffff;}
+body{background-color:#ffffff;}.navigation.pagination .nav-links .page-numbers.current{color:#ffffff;}
+.site-header{background-color:#212121;}.site-header{-webkit-box-shadow:inset 0 0 0 9999em;-moz-box-shadow:inset 0 0 0 9999em;box-shadow:inset 0 0 0 9999em;color:rgba(33, 33, 33, 0.50);}
+.main-navigation-container,.main-navigation.open,.main-navigation ul ul,.main-navigation .sub-menu{background-color:#212121;}.main-navigation-container{background-color:transparent;}
+.site-footer{background-color:#212121;}
+.site-info-wrapper{background-color:#191919;}.site-info-wrapper .social-menu a,.site-info-wrapper .social-menu a:visited,.site-info-wrapper .social-menu a:hover,.site-info-wrapper .social-menu a:visited:hover{color:#191919;}
+</style>
+<link rel="stylesheet" id="wpcw-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/contact-widgets/assets/css/style.min.css?ver=1.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=4.3.0" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=2.5.16" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.5.16" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=2.5.9" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/elementor/css/global.css?ver=1562230426" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-340-css" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/elementor/css/post-340.css?ver=1562253439" type="text/css" media="all">
+<link rel="stylesheet" id="velux-fonts-css" href="//fonts.googleapis.com/css?family=Playfair+Display%3A300%2C400%2C700%7CRoboto%3A300%2C400%2C700%7CRaleway%3A300%2C400%2C700&amp;subset=latin&amp;ver=5.2.2" type="text/css" media="all">
+<style id="velux-fonts-inline-css" type="text/css">
+.site-title{font-family:"Playfair Display", sans-serif;}
+.main-navigation ul li a,.main-navigation ul li a:visited,button,a.button,a.fl-button,input[type="button"],input[type="reset"],input[type="submit"]{font-family:"Playfair Display", sans-serif;}
+h1,h2,h3,h4,h5,h6,label,legend,table th,dl dt,.entry-title,.widget-title{font-family:"Playfair Display", sans-serif;}
+body,p,ol li,ul li,dl dd,.fl-callout-text{font-family:"Roboto", sans-serif;}
+blockquote,.entry-meta,.entry-footer,.comment-list li .comment-meta .says,.comment-list li .comment-metadata,.comment-reply-link,#respond .logged-in-as{font-family:"Raleway", sans-serif;}
+</style>
+<link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.2.2" type="text/css" media="all">
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<link rel="https://api.w.org/" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.2.2">
+<link rel="canonical" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/administrador/">
+<link rel="shortlink" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/?p=340">
+<link rel="alternate" type="application/json+oembed" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-json/oembed/1.0/embed?url=http%3A%2F%2F107.180.51.86%2F%7Elpnhj5h0rl42%2FMakunas%2Fadministrador%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-json/oembed/1.0/embed?url=http%3A%2F%2F107.180.51.86%2F%7Elpnhj5h0rl42%2FMakunas%2Fadministrador%2F&amp;format=xml">
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+.site-title a,.site-title a:visited{color:ffffff;}
+</style>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></head>
+<body class="page-template page-template-elementor_canvas page page-id-340 custom-header-image layout-two-column-default elementor-default elementor-template-canvas elementor-page elementor-page-340" data-elementor-device-mode="desktop">
+			<div data-elementor-type="post" data-elementor-id="340" class="elementor elementor-340" data-elementor-settings="[]">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section class="has_eae_slider elementor-element elementor-element-263f1da elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="263f1da" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="has_eae_slider elementor-element elementor-element-ef8b9a9 elementor-column elementor-col-100 elementor-top-column" data-id="ef8b9a9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-544243c elementor-widget elementor-widget-heading" data-id="544243c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Red A Salvo</h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="has_eae_slider elementor-element elementor-element-5a77180 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="5a77180" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="has_eae_slider elementor-element elementor-element-57532e9 elementor-column elementor-col-100 elementor-top-column" data-id="57532e9" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-d2c79b9 elementor-widget elementor-widget-heading" data-id="d2c79b9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">ALERTAS</h3>		</div>
+				</div>
+				<section class="has_eae_slider elementor-element elementor-element-2f33914 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-id="2f33914" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="has_eae_slider elementor-element elementor-element-da1ba96 elementor-column elementor-col-33 elementor-inner-column" data-id="da1ba96" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-b744172 elementor-widget elementor-widget-heading" data-id="b744172" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Inundacion</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-45b6d0a elementor-widget elementor-widget-image" data-id="45b6d0a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="480" height="263" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/inundacion_mexico_1.jpg" class="attachment-large size-large" alt="" srcset="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/inundacion_mexico_1.jpg 480w, http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/inundacion_mexico_1-300x164.jpg 300w" sizes="(max-width: 480px) 100vw, 480px">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-39f28d8 elementor-align-justify elementor-widget elementor-widget-button" data-id="39f28d8" data-element_type="widget" id="inundacion" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Enviar Alerta AHORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="has_eae_slider elementor-element elementor-element-d58f709 elementor-column elementor-col-33 elementor-inner-column" data-id="d58f709" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-0cb633a elementor-widget elementor-widget-heading" data-id="0cb633a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Movimiento de Masas</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-573a6b1 elementor-widget elementor-widget-image" data-id="573a6b1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="688" height="459" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/DSC_3306-1024x683.jpg" class="attachment-large size-large" alt="" srcset="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/DSC_3306.jpg 1024w, http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/DSC_3306-300x200.jpg 300w, http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/DSC_3306-768x512.jpg 768w" sizes="(max-width: 688px) 100vw, 688px">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-78aea64 elementor-align-justify elementor-widget elementor-widget-button" data-id="78aea64" data-element_type="widget" id="movimiento" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Enviar Alerta AHORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="has_eae_slider elementor-element elementor-element-27fefab elementor-column elementor-col-33 elementor-inner-column" data-id="27fefab" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-9c665f8 elementor-widget elementor-widget-heading" data-id="9c665f8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">Avenida Torrencial</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-478331f elementor-widget elementor-widget-image" data-id="478331f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="688" height="458" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/csm_AgenciaDeNoticias-20180216-03_05_e4d5a933e7.jpg" class="attachment-large size-large" alt="" srcset="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/csm_AgenciaDeNoticias-20180216-03_05_e4d5a933e7.jpg 800w, http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/csm_AgenciaDeNoticias-20180216-03_05_e4d5a933e7-300x200.jpg 300w, http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/uploads/2019/07/csm_AgenciaDeNoticias-20180216-03_05_e4d5a933e7-768x511.jpg 768w" sizes="(max-width: 688px) 100vw, 688px">											</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7652815 elementor-align-justify elementor-widget elementor-widget-button" data-id="7652815" data-element_type="widget" id="avenida" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Enviar Alerta AHORA</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="has_eae_slider elementor-element elementor-element-54e899d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="54e899d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="has_eae_slider elementor-element elementor-element-24517ac elementor-column elementor-col-100 elementor-top-column" data-id="24517ac" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-676a4b2 elementor-widget elementor-widget-heading" data-id="676a4b2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">INFORMES</h3>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+				<section class="has_eae_slider elementor-element elementor-element-f55601c elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-id="f55601c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div class="has_eae_slider elementor-element elementor-element-ae15484 elementor-column elementor-col-25 elementor-top-column" data-id="ae15484" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-8e47d1c elementor-widget elementor-widget-counter" data-id="8e47d1c" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="400" data-to-value="100" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+							<div class="elementor-counter-title">Numero de inscritos</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-df94956 elementor-align-center elementor-widget elementor-widget-button" data-id="df94956" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Ver mas</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="has_eae_slider elementor-element elementor-element-911d351 elementor-column elementor-col-25 elementor-top-column" data-id="911d351" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-3103386 elementor-widget elementor-widget-counter" data-id="3103386" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="400" data-to-value="100" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+							<div class="elementor-counter-title">Inscritos a Salvo</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-e33c847 elementor-align-center elementor-widget elementor-widget-button" data-id="e33c847" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Ver mas</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="has_eae_slider elementor-element elementor-element-1c1ff48 elementor-column elementor-col-25 elementor-top-column" data-id="1c1ff48" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-ec27cb1 elementor-widget elementor-widget-counter" data-id="ec27cb1" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="400" data-to-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+							<div class="elementor-counter-title">Inscritos en problemas</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-832c1d5 elementor-align-center elementor-widget elementor-widget-button" data-id="832c1d5" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Ver mas</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div class="has_eae_slider elementor-element elementor-element-b5d5931 elementor-column elementor-col-25 elementor-top-column" data-id="b5d5931" data-element_type="column">
+			<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-c6c7847 elementor-widget elementor-widget-counter" data-id="c6c7847" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-counter">
+			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="400" data-to-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+							<div class="elementor-counter-title">Inscritos sin respuesta</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-abb8694 elementor-align-center elementor-widget elementor-widget-button" data-id="abb8694" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Ver mas</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section>
+						</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+/* <![CDATA[ */
+var eae_editor = {"plugin_url":"http:\/\/107.180.51.86\/~lpnhj5h0rl42\/Makunas\/wp-content\/plugins\/addon-elements-for-elementor-page-builder\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/eae.min.js?ver=1.0"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/imagesloaded.min.js?ver=3.2.0"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/masonry.min.js?ver=3.3.2"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/animated-main.min.js?ver=1.0"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/js/particles.min.js?ver=1.0"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/magnific.min.js?ver=1.9"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/vegas/vegas.min.js?ver=2.4.0"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/addon-elements-for-elementor-page-builder/assets/lib/swiper/js/swiper.min.js?ver=4.4.6"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/themes/primer/assets/js/navigation.min.js?ver=1.8.6"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/themes/primer/assets/js/skip-link-focus-fix.min.js?ver=1.8.6"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/wp-embed.min.js?ver=5.2.2"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=2.5.16"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=2.5.9"></script>
+<script type="text/javascript">
+var ElementorProFrontendConfig = {"ajaxurl":"http:\/\/107.180.51.86\/~lpnhj5h0rl42\/Makunas\/wp-admin\/admin-ajax.php","nonce":"7febd521d8","shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en","app_id":""}};
+</script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=2.5.9"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.7.1"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"></script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=4.4.6"></script>
+<script type="text/javascript">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.5.16","urls":{"assets":"http:\/\/107.180.51.86\/~lpnhj5h0rl42\/Makunas\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_enable_lightbox_in_editor":"yes"}},"post":{"id":340,"title":"Administrador","excerpt":""}};
+</script>
+<script type="text/javascript" src="http://107.180.51.86/~lpnhj5h0rl42/Makunas/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.5.16"></script><span id="elementor-device-mode" class="elementor-screen-only"></span>
+
+
+</body></html>
