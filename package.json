@@ -1,0 +1,23 @@
+{
+  "name": "asalvo-hackaton",
+  "version": "1.0.0",
+  "description": "node app ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "johan",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "^0.0.0",
+    "ibm-watson": "^4.2.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {}
+}
